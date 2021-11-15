@@ -36,7 +36,7 @@ For support, email dev.marhabi@gmail.com
 
 
 ## To Improve
-- In some website some words coompained in one long word, its actually from the html-agility source, that part needs investigation and fix
+- In some website some words compained into one long word, its actually from the html-agility source, that part needs investigation and fix
 
 
 ## References

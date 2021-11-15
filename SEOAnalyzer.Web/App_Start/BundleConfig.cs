@@ -8,6 +8,9 @@ namespace SEOAnalyzer.Web
         // For more information on bundling, visit https://go.microsoft.com/fwlink/?LinkId=301862
         public static void RegisterBundles(BundleCollection bundles)
         {
+
+            BundleTable.EnableOptimizations = false;
+
             bundles.Add(new ScriptBundle("~/bundles/scripts").Include(
                         "~/Scripts/jquery-3.6.0.min.js",
                         "~/Scripts/jquery.dataTables-1.11.3.min.js",

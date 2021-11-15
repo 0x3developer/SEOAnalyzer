@@ -37,11 +37,11 @@ namespace SEOAnalyzer.Core.SEOHelper
 
             // remove stop-words use \b to remove full word
             if (_stopWors != null)
-                cleanedText = Regex.Replace(cleanedText, "\\b" + string.Join("\\b|\\b", _stopWors) + "\\b", "");
+                cleanedText = Regex.Replace(cleanedText, "\\b" + string.Join("\\b|\\b", _stopWors) + "\\b", " ");
 
             // delete all digits 0 to 9
             if (_excludeDigits)
-                cleanedText = Regex.Replace(cleanedText, "[0-9]", "", RegexOptions.None);
+                cleanedText = Regex.Replace(cleanedText, "[0-9]", " ", RegexOptions.None);
 
             stringBuilder = new StringBuilder(cleanedText);
 
